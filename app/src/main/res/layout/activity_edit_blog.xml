@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin"
+    tools:context=".activity.AddArticleActivity">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="30sp"
+        android:text="Edit Your Blog Here"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dailymag_bold"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn"
+        app:layout_constraintLeft_toLeftOf="@id/backbtn"
+        tools:layout_editor_absoluteX="89dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Topic Name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dailymagazine_semibold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Describe Your Topic"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/para"
+        app:layout_constraintTop_toBottomOf="@+id/para">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top"
+            android:hint="Write About Your Topic Here"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dailymagazine_regular"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/editblog_btn"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="EDIT BLOG"
+        app:cornerRadius="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toBottomOf="@id/body" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

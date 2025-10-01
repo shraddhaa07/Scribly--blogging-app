@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="9dp"
+    android:elevation="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="264dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin">
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="197dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/dailymagazine_semibold"
+            android:maxLines="2"
+            android:text="Bytes n Beyond: Where Tech Meets Imagination"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/otherimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/register"
+            app:circularflow_radiusInDP="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/user_id"
+            app:layout_constraintStart_toEndOf="@+id/intro"
+            app:layout_constraintTop_toTopOf="@id/user_id" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="70dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="9dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="Nina Dobrev"
+            android:textAlignment="center"
+            android:textColor="@color/light_grey"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/otherimage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="25 March 2025"
+            android:textColor="@color/light_grey"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/user_id"
+            app:layout_constraintStart_toStartOf="@+id/otherimage"
+            app:layout_constraintTop_toBottomOf="@+id/user_id" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="@id/user_id"
+            app:layout_constraintStart_toStartOf="@id/intro"
+            app:layout_constraintTop_toBottomOf="@id/date" />
+
+        <TextView
+            android:id="@+id/intro2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/dailymagazine_regular"
+            android:lineHeight="20sp"
+            android:lineSpacingExtra="2sp"
+            android:maxLines="4"
+            android:text="n a world that thrives on innovation, where lines between reality and virtuality blur, technology has emerged as the ultimate canvas for human imagination. Welcome to Bytes n Beyond, a captivating space where we explore.."
+            android:textColor="@color/lit_black"
+            app:layout_constraintEnd_toEndOf="@id/divider"
+            app:layout_constraintStart_toStartOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <Button
+            android:id="@+id/readmore"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Read more"
+            android:textColor="@color/white"
+            app:cornerRadius="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/intro2"
+            app:layout_constraintTop_toBottomOf="@id/intro2" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/dailymag_bold"
+            android:text="20"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/readmore"
+            app:layout_constraintLeft_toRightOf="@+id/readmore"
+            app:layout_constraintTop_toTopOf="@+id/readmore" />
+
+        <ImageButton
+            android:id="@+id/heart"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="-15dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/likes"
+            app:layout_constraintLeft_toRightOf="@+id/likes"
+            app:layout_constraintTop_toTopOf="@+id/likes"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/like" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/heart"
+            app:layout_constraintLeft_toRightOf="@id/heart"
+            app:layout_constraintTop_toTopOf="@id/heart"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/red_save" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="intro" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="otherimage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Scribly</string>
+    <string name="userEmail">Email</string>
+    <string name="userlogin">Login</string>
+    <string name="userregister">Register</string>
+    <string name="userpassword">Password</string>
+</resources>

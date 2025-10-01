@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "267103147372",
+    "project_id": "scribly-5178d",
+    "storage_bucket": "scribly-5178d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267103147372:android:5177bab00ed9f79d4e8f49",
+        "android_client_info": {
+          "package_name": "com.example.scribly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdD0SVn3RqbYQU96ZEZPa2bZY8Bjh-HEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
